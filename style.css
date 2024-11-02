@@ -1,0 +1,88 @@
+/*estilos gerais*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    background-color: #c9c1b5d6;
+}
+.conteudo {
+    text-align: center;
+
+}
+.imagem-central {
+    width: 200px;
+    height: auto;
+    border-radius: 60px;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease;
+}
+.anime {
+    transform: scale(1.2);
+}
+
+.pergunta h1 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px 0 10px;
+}
+.botoes {
+    margin-top: 10px;
+}
+h1:hover {
+    color: #000000; /* MUDA A COR AO PASSAR O MOUSE */
+    transform: scale(1.10);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    border-radius: 10px; /* BORDAS ARREDONDADAS */
+    transition: transform 0.50s, box-shadow 1s; /* ANIMAÇÕES SUAVES */
+    box-shadow: 0 9px 6px rgba(0, 0, 0, 1.0); /* SOMBRA PARA UM EFEITO DE ELEVAÇÃO */
+}
+#resposta {
+    font-size: 2em; /*AUMENTA O TAMANHO DA REPOSTA*/
+    color: #555;
+    margin-top: 20px;
+    opacity: 0; /*iNICIA INVISÍVEL*/
+    transition: opacity 0.5s ease, transform 0.5s ease; /*ANIMAÇÕES SUAVES*/
+}
+/*QUANDO A REPOSTA É EXIBIDA, FICA VISÍVEL E MAIOR*/
+#resposta.mostrar {
+    opacity: 1;
+    transform: scale(1.05);
+    color: green;
+}
+/* BOTÃO "Sim" EM VERDE */
+#button-sim {
+    background-color: green;
+    color: white;
+}
+/* BOTÃO "Não" EM VERMELHO */
+#button-nao {
+    background-color: rgb(230, 33, 33);
+    color: white;
+}
+/* EFEITO DE HOVER (PASSAR O MOUSE PARA AUMENTAR UM POUCO O BOTÃO */
+button:hover {
+    transform: scale(1.20);/* ALTERA O TAMANHO LEVEMENTE */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* MUDAR O BOTÃO "Não" PARA VERDE E TEXTO "Sim" QUANDO O MOUSE PASSA*/
+#buttonn-nao.houver{
+    background-color: green;
+    color: white;
+}
+#resposta {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 15px;
+}
